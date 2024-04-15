@@ -23,18 +23,18 @@ public class Assign {
      static String Teacher; //for teacher segment
      static String opi; // opi is taken for opinion whether one is teacher or student
      static String StudentName = ""; //name of the student
-     static String time;
+     
      static String teacherid1;
    //  static int studentcount1=1; // if the student count wasnt static it used to become zero everytime after the code or method ends, due to being static it keeps updated, studentcount increases
      static int courseclashcount=0; //tooka a variable for clashing of course and initialized as zero
      static java.util.Date d = new java.util.Date();
      static int s,sl;
-     static String sfr1id,srbid,mlaid,mdyi;
+     
      static int menuno;
      static String[] Course = new  String[100]; //{"CSE 215","CSE 173","MAT 250","EEE 141","CSE 215L"};
     public static void main(String[] args) {
         //student(); //called method should be static, only static ca be called from static
-        //courses();
+        
 
         System.out.print("Do you wanna get Logged as Teacher or Student?, Enter S for student, T for teacher: ");
         Scanner a = new Scanner(System.in);
@@ -68,7 +68,7 @@ public class Assign {
         System.out.print("Enter Password: "); // pass- 123
         pass = i.nextLine();
         System.out.println("");
-        if(teacherid1.equals("131") && pass.equals("123")) 
+        if(teacherid1.equals("131") && pass.equals("123")) //.equals to compare strings
         {
             
             
@@ -94,7 +94,7 @@ public class Assign {
     }
     public static void student() //method used to log in the portal for the students
     {
-        //System.exit(0);
+        
         
         System.out.println(" _______________________________________________________________________________________");
         System.out.println("|                                         RDS                                           |");
@@ -226,7 +226,7 @@ public class Assign {
             System.exit(0);
         }
     }
-    
+    //given below methods are for every facu;ties from where they can access students details
     public static void sfr1()
     {
         
